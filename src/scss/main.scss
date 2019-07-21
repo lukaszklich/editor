@@ -1,0 +1,74 @@
+@import "_normalize";
+@import "_variables";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap&subset=latin-ext");
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: #fff;
+  color: #121232;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 544px;
+  width: 100%;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 44px;
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.form {
+  &__actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__button {
+    border: 1px solid #121232;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 600;    
+    height: 48px;
+    letter-spacing: 0.5px;
+    padding: 16px;
+    min-width: 200px;
+    &--save{
+      background: #121232;
+      color: #fff;
+    }
+  }
+  &__label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  &__message {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #121232;
+    box-sizing: border-box;
+    border-radius: 8px;
+    min-width: 544px;
+    min-height: 244px;
+    margin-bottom: 32px;
+    padding: 12px;
+  }
+  &__wrapper {
+  }
+}
